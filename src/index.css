@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Defaults = first flavor (Blaze Orange). Tweened by GSAP at runtime. */
+  --ar: 255;
+  --ag: 106;
+  --ab: 26;
+  --a2r: 255;
+  --a2g: 176;
+  --a2b: 32;
+  --tr: 87;
+  --tg: 36;
+  --tb: 9;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    background: #050505;
+    -webkit-tap-highlight-color: transparent;
+    scroll-padding-top: 5rem;
+  }
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+  .lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+  }
+  .lenis.lenis-stopped {
+    overflow: hidden;
+  }
+  body {
+    @apply bg-ink font-sans text-white antialiased;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: rgb(var(--ar) var(--ag) var(--ab) / 0.4);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid rgb(var(--a2r) var(--a2g) var(--a2b));
+    outline-offset: 3px;
+    border-radius: 8px;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display;
+  }
+  /* slim themed scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--ar) var(--ag) var(--ab) / 0.5);
+    border-radius: 999px;
+  }
+}

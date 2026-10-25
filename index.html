@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>EMBER — Zero Sugar Natural Energy | Interactive 3D Experience</title>
+    <meta
+      name="description"
+      content="EMBER is a zero-sugar energy drink powered by stevia, natural caffeine, B vitamins and electrolytes. Explore eight flavors in an interactive 3D experience."
+    />
+    <meta name="theme-color" content="#050505" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://ember-energy.example/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EMBER — Zero Sugar Natural Energy" />
+    <meta property="og:description" content="Eight flavors. Zero sugar. Pure natural energy — explore them in 3D." />
+    <meta property="og:image" content="/og-image.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="EMBER — Zero Sugar Natural Energy" />
+    <meta name="twitter:description" content="Eight flavors. Zero sugar. Pure natural energy — explore them in 3D." />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "EMBER Zero Sugar Energy Drink",
+        "description": "Zero-sugar natural energy drink with stevia, natural caffeine, B vitamins and electrolytes. Available in 8 flavors.",
+        "brand": { "@type": "Brand", "name": "EMBER" },
+        "offers": {
+          "@type": "AggregateOffer",
+          "priceCurrency": "USD",
+          "lowPrice": "2.49",
+          "highPrice": "2.99",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <noscript>EMBER is an interactive 3D experience. Please enable JavaScript to explore all eight flavors.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
